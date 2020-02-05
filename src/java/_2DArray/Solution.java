@@ -24,11 +24,11 @@ public class Solution {
                 }
                 powerSet.add(currSubarray);
             }
-        }   
+        }
 
         int negativeSubarrays = 0;
         for (ArrayList<Integer> list : powerSet) {
-            if (isNegativeArray(list)) { 
+            if (isNegativeArray(list)) {
                 negativeSubarrays++;
             }
         }

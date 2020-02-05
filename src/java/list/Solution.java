@@ -13,7 +13,7 @@ public class Solution {
         }
 
         int q = scanner.nextInt();
-        for(int i = 0; i < q * 2; i++) {
+        for (int i = 0; i < q * 2; i++) {
             String line = scanner.nextLine();
             if (line.contains("Insert")) {
                 int x = scanner.nextInt();
@@ -25,7 +25,7 @@ public class Solution {
             }
         }
         scanner.close();
-        
+
         int i;
         for (i = 0; i < list.size() - 1; i++) {
             System.out.print(list.get(i) + " ");

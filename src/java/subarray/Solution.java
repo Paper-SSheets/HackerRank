@@ -19,20 +19,20 @@ public class Solution {
         }
 
 
-        int sumForThisIndex, maxSumIndex = Integer.MIN_VALUE;
-        
+        int maxSumIndex = Integer.MIN_VALUE;
+
         for (int row = 0; row < 4; row++) {
             for (int col = 0; col < 4; col++) {
-                sumForThisIndex = arr[row][col] + arr[row][col+1] + arr[row][col+2]
-                                + arr[row+1][col+1] 
-                                + arr[row+2][col] + arr[row+2][col+1] + arr[row+2][col+2];
-                if (sumForThisIndex > maxSumIndex) { 
+                int sumForThisIndex = arr[row][col] + arr[row][col + 1] + arr[row][col + 2]
+                        + arr[row + 1][col + 1]
+                        + arr[row + 2][col] + arr[row + 2][col + 1] + arr[row + 2][col + 2];
+                if (sumForThisIndex > maxSumIndex) {
                     maxSumIndex = sumForThisIndex;
                 }
             }
         }
 
-        System.out.println(maxSumIndex); 
+        System.out.println(maxSumIndex);
         scanner.close();
     }
 }

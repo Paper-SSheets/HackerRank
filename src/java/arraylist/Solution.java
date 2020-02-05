@@ -25,11 +25,11 @@ public class Solution {
             ArrayList<Integer> thisList = new ArrayList<>();
 
             try {
-                 thisList = list.get(x - 1);
-                 int query = thisList.get(y - 1);
-                 System.out.println(query);
-            } catch(IndexOutOfBoundsException exception) {
-                System.out.println("ERROR!"); continue;
+                thisList = list.get(x - 1);
+                int query = thisList.get(y - 1);
+                System.out.println(query);
+            } catch (IndexOutOfBoundsException exception) {
+                System.out.println("ERROR!");
             }
         }
         scanner.close();
