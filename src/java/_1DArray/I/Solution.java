@@ -1,4 +1,4 @@
-package java._1DArray;
+package java._1DArray.I;
 
 import java.util.Scanner;
 

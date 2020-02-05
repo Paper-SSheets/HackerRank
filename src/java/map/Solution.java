@@ -20,14 +20,11 @@ class Solution {
             String s = in.nextLine();
             if (map.containsKey(s)) {
                 System.out.print(s + "=" + map.get(s));
-                if (in.hasNext()) {
-                    System.out.println();
-                }
             } else {
                 System.out.print("Not found");
-                if (in.hasNext()) {
-                    System.out.println();
-                }
+            }
+            if (in.hasNext()) {
+                System.out.println();
             }
         }
         in.close();
